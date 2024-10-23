@@ -1,0 +1,23 @@
+
+.card {
+    width: 15%;
+    padding-bottom: 40px;
+}
+
+#carta{
+    margin-top: 40px;
+}
+
+.card-img-top {
+    position:relative;
+    left: 20%;
+    bottom: 10vh;
+}
+
+.card-body{
+    position: relative;
+    bottom: 20vh;
+}
+.h5{
+    font-weight: 100;
+}

@@ -9,12 +9,14 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
 import { provideHttpClient } from '@angular/common/http';
 import { MaterialModule } from './modules/material.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { PokemonModalComponent } from './components/pokemon-modal/pokemon-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    PokemonListComponent
+    PokemonListComponent,
+    PokemonModalComponent
   ],
   imports: [
     BrowserModule,
