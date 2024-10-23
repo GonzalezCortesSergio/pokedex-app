@@ -32,13 +32,14 @@ export class PokemonListComponent implements OnInit{
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif`;
   }
 
-  openModal(pokemonUrl: string) {
+  openModal(pokemonUrl: string, index: number) {
 
     const modalRef = this.modalService.open(PokemonModalComponent, { size: 'lg' });
 
     this.service.getPokemon(pokemonUrl).subscribe(res => {
 
       modalRef.componentInstance.pokemon = res;
+      modalRef.componentInstance.index = index;
     })
   }
   capitalizeFirstLetter(string: string) {

@@ -1,6 +1,6 @@
-<div class="d-flex ">
+<div class="modalT d-flex ">
 
-    <img [src]="pokemon.sprites.front_default" />
+    <img [src]="getImage()" class="imgModal"/>
     <div class="m-3">
         <h3>{{pokemon.name}}</h3>
         <p>
@@ -15,6 +15,10 @@
 
                 {{type.type.name}}
             }
+        </p>
+        <p>
+            <strong>Descripción</strong>:
+            
         </p>
     </div>
 </div>

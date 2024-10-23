@@ -8,6 +8,13 @@ import { Pokemon } from '../../interfaces/pokemon.interface';
   styleUrl: './pokemon-modal.component.css'
 })
 export class PokemonModalComponent {
+    @Input()
+    index = 0;
+    getImage() {
+    
+        
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${this.index}.gif`;
+    }
 
   activeModal = inject(NgbActiveModal);
   @Input() pokemon: Pokemon = 

@@ -2,3 +2,50 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card {
+    width: 15%;
+    height: 270px;
+    margin-top: 80px;
+    
+}
+
+.carta{
+    margin-top: 40px;
+}
+
+.card-img-top {
+    position:relative;
+    left: 22%;
+    bottom: 14vh;
+    height: 100px;
+}
+
+.card-body{
+    position: relative;
+    bottom: 14vh;
+}
+
+.btn{
+    position: relative;
+    bottom: 13vh;
+}
+
+body{
+    background-color: rgb(51, 51, 51)
+}
+
+.modalT{
+    background-color: rgb(51, 51, 51);
+    border: 1px, red solid;
+    border-radius: 6px;
+}
+
+.imgModal{
+    width: 300px;
+    margin-right: 40px;
+    padding: 12pt;    
+}
+.m-3{
+    color: aliceblue;
+}
