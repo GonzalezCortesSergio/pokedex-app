@@ -21,4 +21,8 @@ export class PokemonsService {
 
     return this.http.get(pokemonUrl) as Observable<Pokemon>;
   }
+
+  getPokemonDescription(pokemonId: number): Observable<any> {
+    return this.http.get<any>(`${this.API_URL}${pokemonId}`);
+  }
 }
