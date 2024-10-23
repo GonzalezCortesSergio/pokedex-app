@@ -4,10 +4,15 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { provideHttpClient } from '@angular/common/http';
+import { ItemModalComponent } from './components/item-modal/item-modal.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemListComponent,
+    ItemModalComponent
   ],
   imports: [
     BrowserModule,
@@ -15,7 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
