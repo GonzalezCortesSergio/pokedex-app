@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { provideHttpClient } from '@angular/common/http';
 import { ItemModalComponent } from './components/item-modal/item-modal.component';
+import { MtListComponent } from './components/mt-list/mt-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemListComponent,
-    ItemModalComponent
+    ItemModalComponent,
+    MtListComponent
   ],
   imports: [
     BrowserModule,
