@@ -11,6 +11,10 @@ export class ItemModalComponent {
 
   activeModal = inject(NgbActiveModal);
 
+  capitalizeFirstLetter(string: string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   @Input() item: Item = 
   {
     "attributes": [
