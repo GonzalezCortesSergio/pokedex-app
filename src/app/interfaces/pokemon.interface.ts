@@ -31,8 +31,17 @@ export interface Pokemon {
     stats: Stat[]
     types: Type[]
     weight: number
+    specie_result: SpeciesResult
   }
   
+  export interface SpeciesResult{
+    flavor_text_entries: FlavorTextEntry[]
+  }
+
+  export interface FlavorTextEntry{
+    flavor_text: string
+  }
+
   export interface Ability {
     ability: Ability2
     is_hidden: boolean

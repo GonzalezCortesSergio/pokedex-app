@@ -37,7 +37,10 @@ export class PokemonListComponent implements OnInit{
     const modalRef = this.modalService.open(PokemonModalComponent, { size: 'lg' });
 
     this.service.getPokemon(pokemonUrl).subscribe(res => {
+      this.service.getPokemonDescription(res.species.url).subscribe(specie => {
 
+        res.specie_result = specie;
+      })
       modalRef.componentInstance.pokemon = res;
       modalRef.componentInstance.index = index;
     })
