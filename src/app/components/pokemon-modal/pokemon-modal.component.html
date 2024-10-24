@@ -13,7 +13,7 @@
             <strong>Tipo</strong>:
             <div class="d-flex">
             @for (type of pokemon.types; track $index) {
-                <div class="colorTipo m-1 pe-2 ps-2">
+                <div class="colorTipo m-1 pe-2 ps-2 text-dark" [style]="getTypeColor(type.type.name)">
                 {{capitalizeFirstLetter(type.type.name)}}
                 </div>
             }
