@@ -17,5 +17,11 @@
     background-color: rgb(255, 241, 241);
 }
 .navbar{
-    background-color: rgb(255, 164, 164);
+    background-color: rgb(209, 69, 69);
+}
+.navbar-brand{
+    color: white;
+    text-decoration: solid;
+    font-size: 18pt;
+    margin-right: 20pt;
 }
