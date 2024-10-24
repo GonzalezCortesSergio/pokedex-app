@@ -1,0 +1,29 @@
+<div class="modalT d-flex p-5">
+
+    <img [src]="getImage()" class="imgModal"/>
+    <div class="m-3">
+        <h3>{{capitalizeFirstLetter(pokemon.name)}}</h3>
+        <p>
+            <strong>Habilidades</strong>: 
+            @for (ability of pokemon.abilities; track $index) {
+                {{capitalizeFirstLetter(ability.ability.name)}}
+            }
+        </p>
+        <div>
+            <strong>Tipo</strong>:
+            <div class="d-flex">
+            @for (type of pokemon.types; track $index) {
+                <div class="colorTipo m-1 pe-2 ps-2">
+                {{capitalizeFirstLetter(type.type.name)}}
+                </div>
+            }
+            </div>
+        </div>
+        <p>
+            <strong>Descripción</strong>:
+
+            {{pokemon.specie_result.flavor_text_entries[0].flavor_text}}
+
+        </p>
+    </div>
+</div>
