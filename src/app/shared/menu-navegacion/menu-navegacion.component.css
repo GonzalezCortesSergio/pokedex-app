@@ -1,6 +1,6 @@
 .imagenPokeballMenu{
     position:relative;
-    left: 45%;
+    left: 47.5%;
     bottom: 5.5vh;
     width: 100px;
 
@@ -24,4 +24,9 @@
     text-decoration: solid;
     font-size: 18pt;
     margin-right: 20pt;
+}
+
+.botones{
+    position:relative;
+    bottom: 13vh;
 }

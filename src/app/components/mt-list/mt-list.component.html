@@ -1,22 +1,16 @@
-<div class="row p-5 d-flex flex-wrap justify-content-start">
-    
+<h2 class="text-center text-white"><em>MTs</em></h2>
+
+<div class="row d-flex flex-wrap justify-content-start p-5">
     @for (mt of mtList; track $index) {
-
-        <div class="card col-12 col-xl-2 my-3 border-danger bg-dark text-white shadow-lg ms-4">
-
+        <div class="card col-12 col-xl-3 border-danger bg-dark text-white shadow-lg ms-4">
             <div class="carta">
-                <img class="card-img-top mx-2 my-3 w-50" [src]="mt.itemRes.sprites.default" alt="Item img" />
-                <h6 class="text-center">Nº{{$index + 1}}</h6>
-
+                <img class="card-img-top mx-2 my-3 w-50" [src]="mt.itemRes.sprites.default" alt="MT img" />
                 <div class="card-body">
-
                     <h4 class="card-title text-center">{{mt.itemRes.name}}</h4>
-
+                    <h6 class="text-center">Nº{{$index + 1}}</h6>
                 </div>
-
-                <div class="text-center">
-
-                <button class="btn btn-info" (click)="openModal(mt.move.url, mt)">Ver más</button>
+                <div class="text-center mb-5">
+                    <button class="botones btn btn-danger" (click)="openModal(mt.move.url, mt)">Ver más</button>
                 </div>
             </div>
         </div>
