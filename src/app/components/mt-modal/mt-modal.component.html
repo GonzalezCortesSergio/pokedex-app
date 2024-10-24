@@ -12,7 +12,9 @@
         
         <p>
             <strong>Move type: </strong>
-            {{move.type.name}}
         </p>
+        <div class="colorTipo m-1 pe-2 ps-2 text-light w-50 text-center" [style]="getTypeColor(move.type.name)">
+            {{capitalizeFirstLetter(move.type.name)}}
+        </div>
     </div>
 </div>
