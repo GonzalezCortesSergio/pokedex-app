@@ -1,4 +1,4 @@
-import { Item, ItemPreview } from "./item.interface"
+import { FlavorTextEntry, Item, ItemPreview } from "./item.interface"
 
 export interface MtResponse {
     count: number
@@ -36,7 +36,13 @@ export interface MtResponse {
     id: number
     learned_by_pokemon: LearnedByPokemon[]
     name: string
-    type: Type
+    type: Type;
+    flavor_text_entries: FlavorTextEntryMove[]
+  }
+
+  export interface FlavorTextEntryMove{
+
+    flavor_text: string
   }
 
   

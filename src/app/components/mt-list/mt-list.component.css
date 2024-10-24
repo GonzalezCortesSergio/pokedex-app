@@ -1,0 +1,17 @@
+h6{
+    position: relative;
+    bottom: 5vh;
+}
+
+.btn{
+    position: relative;
+    bottom: 10vh;
+}
+.card-img-top {
+
+    position:relative;
+    left: 21%;
+    bottom: 12vh;
+    height: 100px;
+
+}

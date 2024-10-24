@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Mt } from '../../interfaces/mt.interface';
 import { MtService } from '../../services/mt.service';
 import { ItemsService } from '../../services/items.service';
+import { Item } from '../../interfaces/item.interface';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { MtModalComponent } from '../mt-modal/mt-modal.component';
 
 @Component({
   selector: 'app-mt-list',
@@ -9,6 +12,7 @@ import { ItemsService } from '../../services/items.service';
   styleUrl: './mt-list.component.css'
 })
 export class MtListComponent implements OnInit{
+  private modalService = inject(NgbModal);
 
   mtList: Mt[] = [];
 
@@ -30,8 +34,10 @@ export class MtListComponent implements OnInit{
           this.service.getMove(res.move.url).subscribe(move => {
 
             res.moveRes = move;
+
+            this.mtList.push(res);
           })
-          this.mtList.push(res);
+          
         })
       })
     })
@@ -46,5 +52,16 @@ export class MtListComponent implements OnInit{
       this.getMtList();
 
       console.log(this.mtList)
+  }
+
+  openModal(mtUrl: string, mt: Mt) {
+
+    const modalRef = this.modalService.open(MtModalComponent);
+
+    this.service.getMove(mtUrl).subscribe(res => {
+
+      modalRef.componentInstance.move = res;
+      modalRef.componentInstance.mt = mt
+    })
   }
 }

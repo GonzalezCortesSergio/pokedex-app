@@ -1,8 +1,8 @@
-<div class="row p-5 justify-content-around">
+<div class="row p-5 d-flex flex-wrap justify-content-start">
     
     @for (mt of mtList; track $index) {
 
-        <div class="card col-12 col-xl-2 my-3 border-danger">
+        <div class="card col-12 col-xl-2 my-3 border-danger bg-dark text-white shadow-lg ms-4">
 
             <div class="carta">
                 <img class="card-img-top mx-2 my-3 w-50" [src]="mt.itemRes.sprites.default" alt="Item img" />
@@ -10,24 +10,13 @@
 
                 <div class="card-body">
 
-                    <h4 class="card-title text-center">{{capitalizeFirstLetter(mt.itemRes.name)}}</h4>
+                    <h4 class="card-title text-center">{{mt.itemRes.name}}</h4>
 
-                    <p>
-                        Move: {{mt.moveRes.name}}
-                        Type: {{mt.moveRes.type.name}}
-                    </p>
-
-                    <p>
-                        Learned by: 
-                        @for (pokemon of mt.moveRes.learned_by_pokemon; track $index) {
-                            {{pokemon.name}}
-                        }
-                    </p>
                 </div>
 
-                <div class="text-center mb-5">
+                <div class="text-center">
 
-                
+                <button class="btn btn-info" (click)="openModal(mt.move.url, mt)">Ver más</button>
                 </div>
             </div>
         </div>

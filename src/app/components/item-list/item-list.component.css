@@ -2,7 +2,17 @@
 
     position:relative;
     left: 21%;
-    bottom: 14vh;
+    bottom: 12vh;
     height: 100px;
 
+}
+
+h6{
+    position: relative;
+    bottom: 5vh;
+}
+
+.btn{
+    position: relative;
+    bottom: 10vh;
 }

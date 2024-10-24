@@ -1,0 +1,18 @@
+<div class="modalT d-flex">
+
+    <img class="imgModal" [src]="mt.itemRes.sprites.default" />
+
+    <div class="m-3">
+
+        <h3>{{capitalizeFirstLetter(move.name)}}</h3>
+
+        <p>
+            <strong>Description</strong>: {{move.flavor_text_entries[0].flavor_text}}
+        </p>
+        
+        <p>
+            <strong>Move type: </strong>
+            {{move.type.name}}
+        </p>
+    </div>
+</div>
