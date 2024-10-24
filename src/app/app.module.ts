@@ -10,13 +10,17 @@ import { provideHttpClient } from '@angular/common/http';
 import { MaterialModule } from './modules/material.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { PokemonModalComponent } from './components/pokemon-modal/pokemon-modal.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemModalComponent } from './components/item-modal/item-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     PokemonListComponent,
-    PokemonModalComponent
+    PokemonModalComponent,
+    ItemListComponent,
+    ItemModalComponent
   ],
   imports: [
     BrowserModule,

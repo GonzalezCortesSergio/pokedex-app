@@ -1,0 +1,13 @@
+<div class="modalT d-flex">
+
+    <img class="imgModal" [src]="item.sprites.default" />
+
+    <div class="m-3">
+
+        <h3>{{capitalizeFirstLetter(item.name)}}</h3>
+
+        <p>
+            Description: {{item.flavor_text_entries[0].text}}
+        </p>
+    </div>
+</div>
