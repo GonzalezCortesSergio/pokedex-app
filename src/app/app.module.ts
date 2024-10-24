@@ -14,6 +14,7 @@ import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemModalComponent } from './components/item-modal/item-modal.component';
 import { MtListComponent } from './components/mt-list/mt-list.component';
 import { MtModalComponent } from './components/mt-modal/mt-modal.component';
+import { MenuNavegacionComponent } from './shared/menu-navegacion/menu-navegacion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MtModalComponent } from './components/mt-modal/mt-modal.component';
     ItemListComponent,
     ItemModalComponent,
     MtListComponent,
-    MtModalComponent
+    MtModalComponent,
+    MenuNavegacionComponent
   ],
   imports: [
     BrowserModule,
