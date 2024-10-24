@@ -1,0 +1,21 @@
+.imagenPokeballMenu{
+    position:relative;
+    left: 45%;
+    bottom: 5.5vh;
+    width: 100px;
+
+}
+
+.gifts{
+    height: 25pt;
+    margin-right: 3pt;
+}
+
+.cajita{
+    border-radius: 20px;
+    margin: 1pt;
+    background-color: rgb(255, 241, 241);
+}
+.navbar{
+    background-color: rgb(255, 164, 164);
+}
