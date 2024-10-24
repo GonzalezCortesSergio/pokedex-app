@@ -1,0 +1,17 @@
+.card{
+    width: 250px;
+    height: 250px;
+}
+.container{
+    color: aliceblue;
+}
+.btn{
+    position:relative;
+    top: 0.1vh;
+}
+
+.listas{
+    border: solid, gray;
+    border-radius: 40px;
+    
+}
