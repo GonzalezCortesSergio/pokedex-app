@@ -48,3 +48,8 @@ body{
 .m-3{
     color: aliceblue;
 }
+
+.colorTipo{
+    border: solid, snow, 1pt;
+    border-radius: 6pt;
+}

@@ -4,8 +4,13 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ItemListComponent } from './components/item-list/item-list.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { provideHttpClient } from '@angular/common/http';
+import { MaterialModule } from './modules/material.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { PokemonModalComponent } from './components/pokemon-modal/pokemon-modal.component';
+import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemModalComponent } from './components/item-modal/item-modal.component';
 import { MtListComponent } from './components/mt-list/mt-list.component';
 import { MtModalComponent } from './components/mt-modal/mt-modal.component';
@@ -13,6 +18,9 @@ import { MtModalComponent } from './components/mt-modal/mt-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
+    InicioComponent,
+    PokemonListComponent,
+    PokemonModalComponent,
     ItemListComponent,
     ItemModalComponent,
     MtListComponent,
@@ -21,11 +29,13 @@ import { MtModalComponent } from './components/mt-modal/mt-modal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MaterialModule,
   ],
   providers: [
     provideClientHydration(),
-    provideHttpClient()
+    provideHttpClient(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
