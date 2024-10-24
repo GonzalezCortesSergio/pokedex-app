@@ -12,6 +12,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { PokemonModalComponent } from './components/pokemon-modal/pokemon-modal.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { ItemModalComponent } from './components/item-modal/item-modal.component';
+import { MtListComponent } from './components/mt-list/mt-list.component';
+import { MtModalComponent } from './components/mt-modal/mt-modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ItemModalComponent } from './components/item-modal/item-modal.component
     PokemonListComponent,
     PokemonModalComponent,
     ItemListComponent,
-    ItemModalComponent
+    ItemModalComponent,
+    MtListComponent,
+    MtModalComponent
   ],
   imports: [
     BrowserModule,
